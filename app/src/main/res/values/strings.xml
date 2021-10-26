@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">examenViajes</string>
+    <string name="numero_de_viajeros">Numero de viajeros</string>
+    <string name="precio_viaje">Precio Viaje</string>
+    <string name="monstrar_ingresos">MONSTRAR INGRESOS</string>
+    <string name="siguente">SIGUENTE</string>
+    <string name="todo">TODO</string>
+
+    <string name="precio_del_viaje">Precio del viaje</string>
+    <string name="aplicar">APLICAR</string>
+    <string name="precio_del_viaje2">Precio del viaje</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="gastos">Gastos</string>
+    <string name="total">Total</string>
+    <string name="precio_del_autobus">Precio del Autobus</string>
+    <string name="_0">0€</string>
+    <string name="_01">0€</string>
+    <string name="_02">0€</string>
+    <string name="_03">0€</string>
+    <string name="_04">0€</string>
+    <string name="numero_de_viajes">Numero de viajes</string>
+</resources>

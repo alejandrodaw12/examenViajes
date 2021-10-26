@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="206dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/autobus" />
+
+    <Button
+        android:id="@+id/btn_ingresos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="ingresos"
+        android:text="@string/monstrar_ingresos"
+        app:layout_constraintEnd_toEndOf="@+id/edt_precio_viaje"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_precio_viaje"
+        app:layout_constraintTop_toBottomOf="@+id/edt_precio_viaje" />
+
+    <TextView
+        android:id="@+id/txt_monstrar_ingresos"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ingresos"
+        app:layout_constraintStart_toStartOf="@+id/btn_ingresos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ingresos" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:text="@string/siguente"
+        android:onClick="siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_numero_personas"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/numero_de_viajeros"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edt_precio_viaje"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/precio_del_viaje"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edt_numero_personas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_numero_personas"
+        app:layout_constraintTop_toBottomOf="@+id/edt_numero_personas"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
